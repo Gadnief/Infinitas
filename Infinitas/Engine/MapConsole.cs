@@ -11,7 +11,7 @@ namespace Infinitas.Engine
 
         public MapConsole()
         {
-            Map_Console = new Console(50, 50);          
+            Map_Console = new Console(100, 50);          
         }       
 
         public void RenderMapConsole(Map map)

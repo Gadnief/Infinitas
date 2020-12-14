@@ -58,7 +58,7 @@ namespace Infinitas
         
         private static void Program_WindowResized(object sender, EventArgs e)
         {
-            mainMenu.MenuMainConsole.Position = new Point(mainConsole.Width - 20, 0);
+            mainMenu.MenuMainConsole.Position = new Point(mainConsole.Width - 50, 0);
             mapConsole.Map_Console.Position = new Point(0, 0);
 
             mainConsole.Resize(Global.WindowWidth / mainConsole.Font.Size.X, Global.WindowHeight / mainConsole.Font.Size.Y, false);
@@ -84,7 +84,7 @@ namespace Infinitas
 
             //Init cosoles
             mainConsole = new Console(10, 10);
-            mainMenu = new MenuMainClass(20, 15);
+            mainMenu = new MenuMainClass(50, 15);
             mapConsole = new MapConsole();
 
             //mainConsole.Resize(Global.WindowWidth / mainConsole.Font.Size.X, Global.WindowHeight / mainConsole.Font.Size.Y, false);
@@ -103,7 +103,7 @@ namespace Infinitas
             //Settings.ToggleFullScreen();
 
             //Position child consoles
-            mainMenu.MenuMainConsole.Position = new Point(mainConsole.Width - 20, 0);
+            mainMenu.MenuMainConsole.Position = new Point(mainConsole.Width - 50, 0);
             mapConsole.Map_Console.Position = new Point(0, 0);
         }
 
