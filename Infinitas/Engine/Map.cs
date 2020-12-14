@@ -23,5 +23,10 @@ namespace Infinitas.Engine
                 }
             }
         }
+
+        public void PlaceObjectInstance(Guid objectID, int x_position, int y_position)
+        {
+
+        }
     }
 }
