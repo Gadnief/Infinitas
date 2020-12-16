@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace Infinitas.Engine
 {
     public class Map
@@ -24,9 +26,9 @@ namespace Infinitas.Engine
             }
         }
 
-        public void PlaceObjectInstance(Guid objectID, int x_position, int y_position)
+        public void PlaceObject()
         {
-
+            
         }
     }
 }

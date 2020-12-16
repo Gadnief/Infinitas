@@ -5,6 +5,7 @@ using Console = SadConsole.Console;
 using MenuMainClass = Infinitas.Menu.MenuMainClass;
 using Microsoft.Extensions.Configuration;
 using Infinitas.Engine;
+using System.Collections.Generic;
 
 namespace Infinitas
 {
@@ -110,6 +111,18 @@ namespace Infinitas
         private static void InitGame()
         {
             map = new Map();
+
+            // Test to fill map with an object
+            List<MetaObject> metaObjects = new List<MetaObject>();
+            MetaObject firstObj = new MetaObject("Wohnhaus", "Das ist das erste Wohnhaus was es hier im SPiel gibt!");
+            metaObjects.Add(firstObj);
+
+            MetaObjectInstance firstInstance = new MetaObjectInstance(firstObj, 6, 6);
+
+            List<MetaObjectInstance> metaObjectInstances = new List<MetaObjectInstance>();
+            metaObjectInstances.Add(firstInstance);
+            //--------------------------------
+
         }
     }
 }
